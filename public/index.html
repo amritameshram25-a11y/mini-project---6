@@ -1,0 +1,60 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Utility Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Student Utility Dashboard</h1>
+    <p>Manage contacts, learning progress and notes in one place.</p>
+  </header>
+
+  <main>
+    <section class="card">
+      <h2>1. Contact Form Collector</h2>
+      <form id="contactForm">
+        <input id="contactName" placeholder="Your name" required>
+        <input id="contactEmail" type="email" placeholder="Your email" required>
+        <textarea id="contactMessage" placeholder="Your message" required></textarea>
+        <button type="submit">Save Contact</button>
+      </form>
+      <p id="contactStatus" class="status"></p>
+      <h3>Saved Contacts</h3>
+      <div id="contacts"></div>
+    </section>
+
+    <section class="card">
+      <h2>2. Student Progress Tracker</h2>
+      <form id="progressForm">
+        <input id="studentName" placeholder="Student name" required>
+        <input id="courseName" placeholder="Course name" required>
+        <input id="percentage" type="number" min="0" max="100"
+          placeholder="Completion percentage (0-100)" required>
+        <button type="submit">Save Progress</button>
+      </form>
+      <p id="progressStatus" class="status"></p>
+      <h3>Saved Progress</h3>
+      <div id="progressList"></div>
+    </section>
+
+    <section class="card">
+      <h2>3. Quick Notes Saver</h2>
+      <form id="noteForm">
+        <input id="noteTitle" placeholder="Note title" required>
+        <textarea id="noteContent" placeholder="Write your note..." required></textarea>
+        <button type="submit">Save Note</button>
+      </form>
+      <p id="noteStatus" class="status"></p>
+      <h3>Saved Notes</h3>
+      <div id="notes"></div>
+    </section>
+  </main>
+
+  <footer>Student Utility Dashboard | Mini Project</footer>
+  <script src="script.js"></script>
+</body>
+</html>
